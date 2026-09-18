@@ -420,7 +420,7 @@ main > ul.source-list li::before { content: none; }
   margin: 0 0 12px;
 }
 
-.pick p:not(.specs):not(.pick-example) {
+.pick > p:not(.specs):not(.pick-example) {
   font-size: 15px;
   line-height: 1.65;
   color: var(--text-soft);
@@ -446,6 +446,53 @@ main > ul.source-list li::before { content: none; }
 .btn:hover {
   transform: translateY(-1px);
   box-shadow: 0 10px 22px rgba(0, 87, 255, 0.35);
+}
+
+/* ---------- Mini reviews (inside picks) ---------- */
+
+.mini-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--panel-border);
+}
+
+.mini-review {
+  flex: 1 1 220px;
+  background: var(--paper);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.mini-review .stars {
+  display: block;
+  color: #f5a623;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.mini-review p {
+  margin: 0 0 6px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text);
+  font-style: italic;
+}
+
+.mini-review cite {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  color: var(--text-soft);
+}
+
+.mini-review cite a {
+  color: var(--text-soft);
+  text-decoration: underline;
 }
 
 /* ---------- CTA banner ---------- */
