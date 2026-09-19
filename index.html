@@ -7,7 +7,7 @@
 <meta name="description" content="Independent buying guides and price tracking for SSDs, USB flash drives, and storage devices, as AI-driven demand reshapes the market.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Exo:wght@300;400;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5JZ5ZV75E"></script>
@@ -33,17 +33,19 @@
   </div>
 </header>
 
-<section class="hero">
+<section class="hero hero-cinematic">
+  <div id="hero-media" aria-hidden="true"></div>
   <div id="hero-3d" aria-hidden="true"></div>
-  <div>
-    <h1>Storage buying guides for a market that's moving fast</h1>
+  <div class="hero-cinematic-content">
+    <span class="hero-tag">[ STORAGE INTELLIGENCE — UPDATED SEPTEMBER 2026 ]</span>
+    <h1>Storage buying guides<br>for a market moving fast</h1>
     <p class="lead">NAND and hard drive supply is being squeezed by AI infrastructure demand, and prices are shifting month to month. Cyberneum tracks what's actually worth buying right now — and what to hold off on.</p>
-    <span class="asof">Updated September 2026</span>
+    <a class="btn-bracket" href="#start-here">Enter the Guides</a>
   </div>
 </section>
 
 <main>
-  <h2>Start here</h2>
+  <h2 id="start-here">Start here</h2>
   <div class="grid">
     <div class="card">
       <h3>Best Portable SSDs (2026)</h3>
@@ -86,6 +88,7 @@
   </div>
 </footer>
 
+<script src="hero-media.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 <script src="hero-3d.js" defer></script>
 <script src="interactive.js" defer></script>
