@@ -98,7 +98,14 @@ section.band h2{font-size:clamp(32px,4.4vw,48px);font-weight:800;max-width:18ch;
 
 .demo{border-radius:var(--radius-lg);overflow:hidden;background:var(--card);border:1px solid var(--line);aspect-ratio:16/9;max-width:100%}
 .demo video{width:100%;height:100%;object-fit:cover;display:block}
-.demo-cap{color:var(--muted);margin:14px 0 0;font-size:15px}
+.demo-cap{color:var(--muted);margin:12px 0 0;font-size:15px}
+.videos{display:grid;gap:28px}
+.clip{margin:0;min-width:0}
+.demo.tall{aspect-ratio:9/16;max-width:360px;margin-inline:auto}
+@media(min-width:800px){
+  .videos{grid-template-columns:minmax(0,3.16fr) minmax(0,1fr);align-items:start}
+  .demo.tall{max-width:none}
+}
 .uses{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
 .uses li{border:1.5px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:500;background:var(--card)}
 
@@ -201,11 +208,21 @@ footer p{max-width:80ch;margin:0 0 8px}
 
 <section class="band" id="video">
   <div class="wrap">
-    <h2>From bed to yoga mat.</h2>
-    <div class="demo">
-      <video id="demo" src="video/demo.mp4" poster="video/poster.jpg" muted loop playsinline controls preload="metadata" aria-label="Video: a woman puts on the socks, walks around her kitchen and stands on a yoga mat, then the colors fanned out on a rug"></video>
+    <h2>See them on.</h2>
+    <div class="videos">
+      <figure class="clip">
+        <div class="demo">
+          <video id="demo" src="video/demo.mp4" poster="video/poster.jpg" muted loop playsinline controls preload="metadata" aria-label="Video: a woman puts on the socks, walks around her kitchen and stands on a yoga mat, then the colors fanned out on a rug"></video>
+        </div>
+        <figcaption class="demo-cap">From bed to yoga mat in the same pair.</figcaption>
+      </figure>
+      <figure class="clip">
+        <div class="demo tall">
+          <video id="testimonial" src="video/testimonial.mp4" poster="video/testimonial-poster.jpg" playsinline controls preload="metadata" aria-label="Video: a woman holds up a pair of navy striped HUE mini crew socks and talks about switching to them"></video>
+        </div>
+        <figcaption class="demo-cap">Why switch, in 16 seconds. Tap for sound. AI-generated video.</figcaption>
+      </figure>
     </div>
-    <p class="demo-cap">Ten seconds, one pair of socks, a whole morning.</p>
   </div>
 </section>
 
