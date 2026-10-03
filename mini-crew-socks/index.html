@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mini Crew Socks</title>
+<meta name="description" content="HUE Women's Mini Crew Socks, 6-pair pack. Cushioned cotton-blend socks in 10 colorways, rated 4.5 out of 5 by 17,000+ Amazon shoppers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F3F1;
+  --card:#FFFFFF;
+  --ink:#1D2738;
+  --muted:#5C6472;
+  --line:#D9DCDA;
+  --tint:#C9787F;          /* changes with the chosen colorway */
+  --tint-ink:#FFFFFF;
+  --star:#E3A21A;
+  --radius-lg:28px;
+  --radius-sm:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#151A22; --card:#1D2430; --ink:#EEF0F3; --muted:#A3AAB6; --line:#2E3746; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{ --paper:#151A22; --card:#1D2430; --ink:#EEF0F3; --muted:#A3AAB6; --line:#2E3746; color-scheme:dark; }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--tint);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+@media(min-width:760px){.wrap{padding:0 32px}}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+.logo{font:800 22px/1 "Bricolage Grotesque",sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:26px;height:26px;border-radius:50% 50% 50% 12px;background:var(--tint);transition:background .4s}
+.top nav{display:flex;gap:22px;font-weight:500;font-size:15px}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--ink)}
+@media(max-width:640px){.top nav{display:none}}
+
+/* hero / buy box */
+.buy{display:grid;gap:28px;padding-top:8px;padding-bottom:56px}
+@media(min-width:900px){.buy{grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}}
+.gallery{position:relative}
+.main-img{background:#fff;border-radius:var(--radius-lg);aspect-ratio:1/1;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line)}
+.main-img img{width:100%;height:100%;object-fit:contain}
+.thumbs{display:flex;gap:10px;margin-top:12px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.thumbs button{flex:0 0 68px;height:68px;border-radius:var(--radius-sm);border:2px solid transparent;background:#fff;padding:3px;cursor:pointer}
+.thumbs button[aria-current="true"]{border-color:var(--tint)}
+.thumbs img{width:100%;height:100%;object-fit:contain}
+
+.brand{color:var(--muted);font-weight:500;margin:0 0 6px}
+.buy h1{font-size:clamp(34px,4vw,50px);font-weight:800;max-width:16ch}
+.rating{display:flex;align-items:center;gap:10px;margin:18px 0 6px;flex-wrap:wrap}
+.stars{color:var(--star);letter-spacing:2px;font-size:19px}
+.rating a{color:var(--muted);font-size:15px}
+.lede{color:var(--muted);max-width:52ch;margin:14px 0 28px}
+
+/* colorway picker: the centrepiece */
+.picker h2{font-size:20px;font-weight:700;margin-bottom:4px}
+.picker .chosen{font-size:15px;color:var(--muted);margin:0 0 14px}
+.picker .chosen b{color:var(--ink)}
+.buy > *{min-width:0}
+.swatches{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+@media(max-width:420px){.swatches{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}}
+.sw{min-width:0}
+.sw{appearance:none;border:2px solid var(--line);background:#fff;border-radius:16px;padding:6px;cursor:pointer;aspect-ratio:1/1;position:relative;transition:border-color .2s,transform .2s}
+.sw img{width:100%;height:100%;object-fit:contain}
+.sw:hover{transform:translateY(-2px)}
+.sw[aria-checked="true"]{border-color:var(--tint);box-shadow:0 0 0 3px color-mix(in srgb,var(--tint) 30%,transparent)}
+.sw .dot{position:absolute;right:6px;bottom:6px;width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+
+.cta-row{display:flex;flex-direction:column;gap:10px;margin-top:26px}
+.cta{display:flex;justify-content:center;align-items:center;gap:10px;text-decoration:none;font:700 18px/1 Figtree,sans-serif;padding:20px 24px;border-radius:999px;background:var(--tint);color:var(--tint-ink);transition:background .4s,filter .2s}
+.cta:hover{filter:brightness(1.08)}
+.fine{font-size:13px;color:var(--muted);margin:0;text-align:center}
+.facts{display:flex;flex-wrap:wrap;gap:8px 20px;margin:22px 0 0;padding:0;list-style:none;font-size:15px;color:var(--muted)}
+.facts li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--tint);margin-right:8px;vertical-align:middle;transition:background .4s}
+
+/* sections */
+section.band{padding:72px 0;border-top:1px solid var(--line)}
+section.band h2{font-size:clamp(32px,4.4vw,48px);font-weight:800;max-width:18ch;margin-bottom:28px}
+.feat{display:grid;gap:36px}
+@media(min-width:800px){.feat{grid-template-columns:repeat(3,1fr)}}
+.feat h3{font-size:22px;font-weight:700;margin-bottom:8px}
+.feat p{margin:0;color:var(--muted)}
+.feat .ico{width:46px;height:46px;border-radius:14px;background:color-mix(in srgb,var(--tint) 18%,var(--card));display:grid;place-items:center;margin-bottom:16px;transition:background .4s}
+.feat .ico svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+.demo{border-radius:var(--radius-lg);overflow:hidden;background:var(--card);border:1px solid var(--line);aspect-ratio:16/9;max-width:100%}
+.demo video{width:100%;height:100%;object-fit:cover;display:block}
+.demo-cap{color:var(--muted);margin:14px 0 0;font-size:15px}
+.uses{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.uses li{border:1.5px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:500;background:var(--card)}
+
+.reviews{display:grid;gap:40px}
+@media(min-width:860px){.reviews{grid-template-columns:320px 1fr;gap:64px}}
+.score{font:800 88px/1 "Bricolage Grotesque",sans-serif}
+.score + p{margin:6px 0 20px;color:var(--muted)}
+.bars{display:grid;gap:8px;font-size:14px}
+.bar{display:grid;grid-template-columns:52px 1fr 40px;align-items:center;gap:10px}
+.bar span:last-child{text-align:right;color:var(--muted)}
+.track{height:10px;border-radius:999px;background:var(--line);overflow:hidden}
+.track i{display:block;height:100%;background:var(--star);border-radius:999px}
+.verdict h3{font-size:22px;margin-bottom:10px}
+.verdict p{color:var(--muted);max-width:62ch;margin:0 0 18px}
+.pros{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+@media(min-width:560px){.pros{grid-template-columns:1fr 1fr}}
+.pros li{background:var(--card);border-radius:var(--radius-sm);padding:14px 16px;border:1px solid var(--line)}
+.pros b{display:block;font-weight:600}
+.pros span{font-size:14px;color:var(--muted)}
+
+.specs{width:100%;border-collapse:collapse;max-width:760px}
+.specs th,.specs td{text-align:left;padding:14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.specs th{font-weight:600;width:38%;padding-right:16px}
+.specs td{color:var(--muted)}
+
+details{border-bottom:1px solid var(--line);max-width:760px}
+summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:600;font-size:18px;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;line-height:1;color:var(--muted);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 20px;color:var(--muted);max-width:62ch}
+
+.final{text-align:center;padding:88px 0}
+.final h2{margin:0 auto 14px !important}
+.final p{color:var(--muted);margin:0 auto 28px;max-width:46ch}
+.final .cta{display:inline-flex;min-width:280px}
+
+footer{border-top:1px solid var(--line);padding:32px 0 110px;font-size:13px;color:var(--muted)}
+footer p{max-width:80ch;margin:0 0 8px}
+@media(min-width:900px){footer{padding-bottom:40px}}
+
+/* mobile sticky bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;gap:12px;align-items:center;transform:translateY(110%);transition:transform .3s;z-index:20}
+.sticky.show{transform:none}
+.sticky .cta{flex:1;padding:15px 18px;font-size:16px}
+.sticky img{width:48px;height:48px;border-radius:10px;background:#fff;object-fit:contain}
+@media(min-width:900px){.sticky{display:none}}
+
+@media (prefers-reduced-motion: reduce){*{transition:none !important;scroll-behavior:auto !important}}
+</style>
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="logo" href="#"><i aria-hidden="true"></i>Sock Drawer</a>
+  <nav aria-label="Sections">
+    <a href="#video">Video</a>
+    <a href="#why">Why these</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#details">Details</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main>
+<div class="wrap buy">
+  <div class="gallery">
+    <div class="main-img"><img id="mainImg" src="img/g-51pYzdLXagL.jpg" alt="HUE Women's Mini Crew Socks, 6-pair pack"></div>
+    <div class="thumbs" id="thumbs" aria-label="Product photos"></div>
+  </div>
+
+  <div>
+    <p class="brand">Women's mini crew socks by HUE, 6 pairs</p>
+    <h1>Mini crew socks that go with every sneaker you own.</h1>
+    <div class="rating">
+      <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#189;</span>
+      <strong>4.5 out of 5</strong>
+      <a href="#reviews">17,367 ratings on Amazon</a>
+    </div>
+    <p class="lede">A soft cotton blend with a cushioned footbed and a short crew cuff that sits just above the shoe. Six pairs in a pack, in ten colorways.</p>
+
+    <div class="picker" role="radiogroup" aria-labelledby="pickLabel">
+      <h2 id="pickLabel">Choose your colorway</h2>
+      <p class="chosen">Selected: <b id="chosenName">White</b></p>
+      <div class="swatches" id="swatches"></div>
+    </div>
+
+    <div class="cta-row">
+      <a class="cta buy-link" href="https://amzn.to/4y4e7HI" target="_blank" rel="sponsored noopener">Buy on Amazon</a>
+      <p class="fine">Opens Amazon in a new tab, where you pick your color. Amazon handles payment, shipping and returns.</p>
+    </div>
+
+    <ul class="facts">
+      <li>30-day returns via Amazon</li>
+      <li>Machine washable</li>
+      <li>Made in the USA</li>
+    </ul>
+  </div>
+</div>
+
+<section class="band" id="video">
+  <div class="wrap">
+    <h2>From bed to yoga mat.</h2>
+    <div class="demo">
+      <video id="demo" src="video/demo.mp4" poster="video/poster.jpg" muted loop playsinline controls preload="metadata" aria-label="Video: a woman puts on the socks, walks around her kitchen and stands on a yoga mat, then the colors fanned out on a rug"></video>
+    </div>
+    <p class="demo-cap">Ten seconds, one pair of socks, a whole morning.</p>
+  </div>
+</section>
+
+<section class="band" id="why">
+  <div class="wrap">
+    <h2>Built for long days on your feet.</h2>
+    <div class="feat">
+      <div>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 16c3 0 4-2 8-2s5 2 8 2"/><path d="M4 20c3 0 4-2 8-2s5 2 8 2"/></svg></div>
+        <h3>Cushioned footbed</h3>
+        <p>Extra padding under the sole cuts down foot fatigue on long walks, workouts and shifts.</p>
+      </div>
+      <div>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div>
+        <h3>Soft, breathable cotton</h3>
+        <p>A 71% cotton blend with nylon and spandex for stretch, plus ventilation to keep feet cooler.</p>
+      </div>
+      <div>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 3v9l-3 4a3 3 0 0 0 2.5 5H17a3 3 0 0 0 3-3v-1l-7-3V3"/></svg></div>
+        <h3>Mini crew length</h3>
+        <p>Covers the ankle without the bulk of a full crew. Looks right with sneakers, booties and loafers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Where they go.</h2>
+    <ul class="uses">
+      <li>Pickleball</li><li>Tennis</li><li>Golf</li><li>Running</li><li>Biking</li><li>The gym</li><li>Errands</li><li>Work shifts</li><li>Travel days</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="reviews">
+  <div class="wrap reviews">
+    <div>
+      <div class="score">4.5</div>
+      <p>out of 5, from 17,367 ratings on Amazon</p>
+      <div class="bars">
+        <div class="bar"><span>5 star</span><div class="track"><i style="width:76%"></i></div><span>76%</span></div>
+        <div class="bar"><span>4 star</span><div class="track"><i style="width:11%"></i></div><span>11%</span></div>
+        <div class="bar"><span>3 star</span><div class="track"><i style="width:6%"></i></div><span>6%</span></div>
+        <div class="bar"><span>2 star</span><div class="track"><i style="width:3%"></i></div><span>3%</span></div>
+        <div class="bar"><span>1 star</span><div class="track"><i style="width:4%"></i></div><span>4%</span></div>
+      </div>
+    </div>
+    <div class="verdict">
+      <h3>What buyers say</h3>
+      <p>Most reviewers call out the quality, the cushioning on the bottom and a length that works with booties and sneakers alike. Opinions on fit and thickness are split: some find them a little snug or thin for hot weather.</p>
+      <ul class="pros">
+        <li><b>Quality</b><span>The most-mentioned topic, mostly positive</span></li>
+        <li><b>Softness</b><span>Comfortable against the skin</span></li>
+        <li><b>Length</b><span>Just right for booties and sneakers</span></li>
+        <li><b>Value</b><span>Six pairs for the price of a few</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="details">
+  <div class="wrap">
+    <h2>The details.</h2>
+    <table class="specs">
+      <tr><th scope="row">Brand</th><td>HUE</td></tr>
+      <tr><th scope="row">Pack size</th><td>6 pairs</td></tr>
+      <tr><th scope="row">Size</th><td>One size (see the size chart on Amazon)</td></tr>
+      <tr><th scope="row">Material</th><td>Colors: 71% cotton, 26% nylon, 3% spandex<br>White: 70% cotton, 27% nylon, 3% spandex</td></tr>
+      <tr><th scope="row">Closure</th><td>Pull-on</td></tr>
+      <tr><th scope="row">Care</th><td>Machine wash</td></tr>
+      <tr><th scope="row">Origin</th><td>Made in the USA</td></tr>
+      <tr><th scope="row">Model number</th><td>U10227</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap">
+    <h2>Questions.</h2>
+    <details><summary>Who ships my order?</summary><p>Amazon. When you click a buy button you go straight to the product on Amazon, and payment, delivery and returns all go through your Amazon account.</p></details>
+    <details><summary>What size are they?</summary><p>One size, made for most women's feet. Amazon's size chart on the product page shows the exact range.</p></details>
+    <details><summary>Are they warm enough for winter?</summary><p>They're a midweight everyday sock. Some reviewers find them on the thin side, so if you want a cold-weather sock, look for a wool blend.</p></details>
+    <details><summary>Can I return them?</summary><p>Yes. Amazon offers a 30-day refund or replacement on this item.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Six fresh pairs, one click away.</h2>
+    <p>Pick the colorway you like and finish your order on Amazon.</p>
+    <a class="cta buy-link" href="https://amzn.to/4y4e7HI" target="_blank" rel="sponsored noopener">Buy on Amazon</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>As an Amazon Associate, we earn from qualifying purchases. Prices and availability are set by Amazon and can change; the price shown on Amazon at checkout is the one that applies.</p>
+    <p>This is an independent page and isn't affiliated with HUE. HUE is a trademark of its owner. Product photos courtesy of Amazon.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <img id="stickyImg" src="" alt="">
+  <a class="cta buy-link" href="https://amzn.to/4y4e7HI" target="_blank" rel="sponsored noopener" tabindex="-1">Buy on Amazon</a>
+</div>
+
+<script>
+/* ---- Edit these two values ---- */
+const AFFILIATE_URL = "https://amzn.to/4y4e7HI";   // your Amazon affiliate link
+const START_COLOR   = "White";
+/* -------------------------------- */
+
+const IMG = id => `img/s-${id.replace("+","_")}.jpg`;
+const COLORS = [
+  {name:"White",          asin:"B00A9MQD8C", img:"21viMo7zQJL", hex:"#E8E8E4", ink:"#1D2738", accent:"#4E6B8A"},
+  {name:"Black",          asin:"B00A9MQCVK", img:"31DaHyli2CL", hex:"#24262B", ink:"#FFFFFF"},
+  {name:"Black and White",asin:"B09CH97DRL", img:"31qJGNc-VqL", hex:"#55585E", ink:"#FFFFFF"},
+  {name:"Beauty",         asin:"B0G72FZG9L", img:"31Q71dKkMuL", hex:"#B98A6E", ink:"#FFFFFF"},
+  {name:"Wild Rose",      asin:"B0BPJW166H", img:"310QPOPNnAL", hex:"#B9646E", ink:"#FFFFFF"},
+  {name:"Navy Stripe",    asin:"B0C8WYT9M5", img:"31e6QqFMzSL", hex:"#2F4366", ink:"#FFFFFF"},
+  {name:"Olive",          asin:"B0BPJZ15JT", img:"31pT9+Z5c2L", hex:"#5F6A43", ink:"#FFFFFF"},
+  {name:"Heather Stripe", asin:"B0DKZ9TRYF", img:"219tJQi3dYL", hex:"#7E7B76", ink:"#FFFFFF"},
+  {name:"Multi",          asin:"B09P8BXYLS", img:"312R7FzPA5L", hex:"#9C6A8E", ink:"#FFFFFF"},
+  {name:"Tipped",         asin:"B0G71PZ9TX", img:"21kNHXW7RwL", hex:"#8B7F6C", ink:"#FFFFFF"},
+];
+const GALLERY = ["51pYzdLXagL","81rXGZo-EHL","61QsIWzlUfL","71ZGPMPv94L","71-r7tSRXyL","81IEvWYaAhL","71oMqwZVInL","61n4A5ng-tL","61clnhSReeL","71A85O4Pl5L"];
+
+const link = () => AFFILIATE_URL;
+const root = document.documentElement;
+const mainImg = document.getElementById("mainImg");
+
+// gallery
+const thumbs = document.getElementById("thumbs");
+GALLERY.forEach((id,i)=>{
+  const b=document.createElement("button");
+  b.type="button"; b.setAttribute("aria-label",`Show photo ${i+1}`);
+  b.setAttribute("aria-current", i===0);
+  b.innerHTML=`<img src="img/t-${id}.jpg" alt="" loading="lazy">`;
+  b.onclick=()=>{ mainImg.src=`img/g-${id}.jpg`;
+    thumbs.querySelectorAll("button").forEach(t=>t.setAttribute("aria-current",t===b)); };
+  thumbs.appendChild(b);
+});
+
+// colorways
+const sw = document.getElementById("swatches");
+function choose(c, focus){
+  // white needs a visible accent, so it borrows a soft blue
+  root.style.setProperty("--tint", c.accent || c.hex);
+  root.style.setProperty("--tint-ink", c.accent ? "#FFFFFF" : c.ink);
+  document.getElementById("chosenName").textContent = c.name;
+  document.querySelectorAll(".cname").forEach(e=>e.textContent=c.name);
+  document.querySelectorAll(".buy-link").forEach(a=>a.href=link(c.asin));
+  document.getElementById("stickyImg").src = IMG(c.img);
+  sw.querySelectorAll(".sw").forEach(b=>{
+    const on = b.dataset.name===c.name;
+    b.setAttribute("aria-checked", on); b.tabIndex = on?0:-1;
+    if(on && focus) b.focus();
+  });
+  try{ localStorage.setItem("sockColor", c.name) }catch(e){}
+}
+COLORS.forEach(c=>{
+  const b=document.createElement("button");
+  b.type="button"; b.className="sw"; b.dataset.name=c.name;
+  b.setAttribute("role","radio"); b.setAttribute("aria-label",c.name); b.title=c.name;
+  b.innerHTML=`<img src="${IMG(c.img)}" alt="" loading="lazy"><span class="dot" style="background:${c.hex}"></span>`;
+  b.onclick=()=>choose(c);
+  sw.appendChild(b);
+});
+sw.addEventListener("keydown",e=>{
+  const i = COLORS.findIndex(c=>c.name===document.activeElement.dataset.name);
+  if(i<0) return;
+  const d = {ArrowRight:1,ArrowDown:1,ArrowLeft:-1,ArrowUp:-1}[e.key];
+  if(d){ e.preventDefault(); choose(COLORS[(i+d+COLORS.length)%COLORS.length], true); }
+});
+let saved=null; try{ saved=localStorage.getItem("sockColor") }catch(e){}
+choose(COLORS.find(c=>c.name===saved) || COLORS.find(c=>c.name===START_COLOR) || COLORS[0]);
+
+// demo video: play muted while on screen, unless the viewer prefers reduced motion
+const demo=document.getElementById("demo");
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches){
+  new IntersectionObserver(([e])=>{ e.isIntersecting ? demo.play().catch(()=>{}) : demo.pause(); },{threshold:.4}).observe(demo);
+}
+
+// sticky bar on mobile once the main button scrolls away
+const sticky=document.getElementById("sticky");
+new IntersectionObserver(([e])=>sticky.classList.toggle("show", !e.isIntersecting && e.boundingClientRect.top<0))
+  .observe(document.querySelector(".cta-row"));
+</script>
+</body>
+</html>
